@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicky Web</title>
 </head>
+    <style>
+        h2{
+            color: red;
+            font-style: italic;
+            height: 2.0em;
+        }
+        details{
+            color: blue;
+            /* background-color: mintcream; */
+        }
+        label{
+            height: 3em;
+            
+        }
+        form{
+            color: blueviolet;
+            
+        }
+        ol,ul,table{
+            color: purple;
+        }
+        a{
+            color: magenta;
+        }
+        body{
+            background-color: oldlace;
+        }
+    </style>
 <body>
     <!-- Images -->
     <h2>I am just doing practice of HTML</h2>
@@ -15,19 +43,18 @@
     <!-- go to links -->
     <a href="https://github.com/IamVicky90">Go to My github account to do some coding</a><br>
     <a href="https://twitter.com/">Twitter </a>
+
     <h2>Please fill the form</h2>
     <form action="https://github.com/IamVicky90">
-    <label for="name"> Name: <input type="text" id="name"></label><br>
-    <label for="email"> Email: <input type="email" id="email"></label><br>
-    <label for="date"> Date: <input type="date" id="date"></label><br>
-      <!-- Gender :<input type="radio" id="male">
-    <label for="male">Male   </label>  -->
+    <label for="name"> Name: <input type="text" id="name"></label><br><br>
+    <label for="email"> Email: <input type="email" id="email"></label><br><br>
+    <label for="date"> Date: <input type="date" id="date"></label><br><br>
 Select your Gender: <br><input type="radio" id="male" name="gender" value="male" checked>
 <label for="male">Male</label><br>
 <input type="radio" id="female" name="gender" value="female">
 <label for="female">Female</label><br>
 <input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label><br>
+<label for="other">Other</label><br><br>
 <label for="qualification">Please Select your Qualification</label>
 <select name="myQualification" id="qualification">
     <option value="Matric">Matric</option>
@@ -37,14 +64,36 @@ Select your Gender: <br><input type="radio" id="male" name="gender" value="male"
 Do you want to reset this form?<input type="reset"><br><br>
 Click here to submit your form<input type="submit">
 
- 
-
-
-
 </form>
+     <!-- table are here -->
+     <br><br><br>
+     <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Muhammad Waqas</td>
+                <td>Fa19-bcs-063</td>
+                <td>waqasbilal02@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
     
-
-
-
+<ul type="dish">
+    <li>This website is hosted by Vicky World production</li>
+    <li>If you find any querry then contact the web host</li>
+</ul>
+<ol type="1">
+    <li>This website is hosted by Waqas</li>
+    <li>If you find any querry then contact the web host</li>
+</ol>
 </body>
 </html>
