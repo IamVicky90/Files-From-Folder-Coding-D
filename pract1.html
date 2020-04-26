@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Vicky Web</title>
 </head>
     <style>
@@ -19,8 +20,20 @@
             height: 3em;
             
         }
-        form{
-            color: blueviolet;
+        #form{
+            color: maroon;
+            border-color: red;
+            border-style: solid;
+            border-width: 6px;
+            border-radius: 13px;
+            border-spacing: 133px;
+            background-image: url("https://source.unsplash.com/1300x900/?nature,water");
+            background-repeat: no-repeat;
+            position: center;
+            padding: 29px;
+            /* margin-right: 345px; */
+            /* margin-left: 100px; */
+            box-sizing: border-box;
             
         }
         ol,ul,table{
@@ -45,7 +58,7 @@
     <a href="https://twitter.com/">Twitter </a>
 
     <h2>Please fill the form</h2>
-    <form action="https://github.com/IamVicky90">
+    <form action="https://github.com/IamVicky90" id="form">
     <label for="name"> Name: <input type="text" id="name"></label><br><br>
     <label for="email"> Email: <input type="email" id="email"></label><br><br>
     <label for="date"> Date: <input type="date" id="date"></label><br><br>
@@ -64,7 +77,16 @@ Select your Gender: <br><input type="radio" id="male" name="gender" value="male"
 Do you want to reset this form?<input type="reset"><br><br>
 Click here to submit your form<input type="submit">
 
-</form>
+</form >
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert" style="color: green;">
+    <strong>If the form is not visible properly then please refresh the page</strong>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+
      <!-- table are here -->
      <br><br><br>
      <table>
@@ -95,5 +117,9 @@ Click here to submit your form<input type="submit">
     <li>This website is hosted by Waqas</li>
     <li>If you find any querry then contact the web host</li>
 </ol>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
