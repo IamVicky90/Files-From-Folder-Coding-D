@@ -16,6 +16,10 @@
             color: blue;
             /* background-color: mintcream; */
         }
+        details:hover{
+            color :green;
+            background-color: white;
+        }
         label{
             height: 3em;
             
@@ -40,15 +44,69 @@
             color: purple;
         }
         a{
-            color: magenta;
+            color:rgb(12, 40, 7);
         }
         body{
             background-color: oldlace;
         }
+        #nav {
+        
+            background-color: aqua;
+        }
+        .btn:hover{
+            /* color: red; */
+            background-color:red;
+        }
+        .btn{
+            color: rgb(63, 15, 139);
+            border-color:red;
+            background-color: white;
+            border-radius: 13px;
+        }
+      
     </style>
 <body>
-    <!-- Images -->
-    <h2>I am just doing practice of HTML</h2>
+    
+    <!-- Navbar is here -->
+    <nav class="navbar navbar-expand-lg" id="nav">
+        <a class="navbar-brand" href="#">Vicky Web</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+           
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+
+
+<h2>I am just doing practice of HTML</h2>
+    <!-- image is here -->
     <div class="container">
     <img src="https://source.unsplash.com/900x400/?nature,water" alt="An unknown error has been occured">
 </div>
@@ -58,7 +116,7 @@
     <a href="https://twitter.com/">Twitter </a>
 
     <h2>Please fill the form</h2>
-    <form action="https://github.com/IamVicky90" id="form">
+    <form action="https://github.com/IamVicky90" id="form" >
     <label for="name"> Name: <input type="text" id="name"></label><br><br>
     <label for="email"> Email: <input type="email" id="email"></label><br><br>
     <label for="date"> Date: <input type="date" id="date"></label><br><br>
@@ -74,8 +132,8 @@ Select your Gender: <br><input type="radio" id="male" name="gender" value="male"
     <option value="Intermediate" selected>Intermediate</option>
     <option value="Graduation">Graduation</option>
 </select><br><br>
-Do you want to reset this form?<input type="reset"><br><br>
-Click here to submit your form<input type="submit">
+Do you want to reset this form?<input type="reset" class="btn"><br><br>
+Click here to submit your form<input type="submit" class="btn">
 
 </form >
 
