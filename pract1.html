@@ -1,83 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Vicky Web</title>
 </head>
-    <style>
-        h2{
-            color: red;
-            font-style: italic;
-            height: 2.0em;
-        }
-        details{
-            color: blue;
-            /* background-color: mintcream; */
-        }
-        details:hover{
-            color :green;
-            background-color: white;
-        }
-        label{
-            height: 3em;
-            
-        }
-        #form{
-            color: maroon;
-            border-color: red;
-            border-style: solid;
-            border-width: 6px;
-            border-radius: 13px;
-            border-spacing: 133px;
-            background-image: url("https://source.unsplash.com/1300x900/?nature,water");
-            background-repeat: no-repeat;
-            position: center;
-            padding: 29px;
-            /* margin-right: 345px; */
-            /* margin-left: 100px; */
-            box-sizing: border-box;
-            
-        }
-        ol,ul,table{
-            color: purple;
-        }
-        a{
-            color:rgb(12, 40, 7);
-        }
-        body{
-            background-color: oldlace;
-        }
-        #nav {
-        
-            background-color: rgb(12, 151, 65);
-        }
-        .btn:hover{
-            /* color: red; */
-            background-color:red;
-        }
-        .btn{
-            color: rgb(63, 15, 139);
-            border-color:red;
-            background-color: white;
-            border-radius: 13px;
-        }
-        summary,span{
-            outline:none;
-        }
-      
-    </style>
+<style>
+    h2 {
+        color: red;
+        font-style: italic;
+        height: 2.0em;
+    }
+
+    details {
+        color: blue;
+        /* background-color: mintcream; */
+    }
+
+    details:hover {
+        color: green;
+        background-color: oldlace;
+    }
+
+    label {
+        height: 3em;
+
+    }
+
+    #form {
+        color: maroon;
+        border-color: red;
+        border-style: solid;
+        border-width: 6px;
+        border-radius: 13px;
+        border-spacing: 133px;
+        background-image: url("https://source.unsplash.com/1300x900/?nature,water");
+        background-repeat: no-repeat;
+        position: center;
+        padding: 29px;
+        /* margin-right: 345px; */
+        /* margin-left: 100px; */
+        box-sizing: border-box;
+        margin: auto;
+
+    }
+
+    ol,
+    ul,
+    table {
+        color: purple;
+    }
+
+    a {
+        color: rgb(12, 40, 7);
+
+    }
+
+
+    a:visited {
+        color:green;
+    }
+    a:hover {
+        color:blue;
+    }
+
+    a:active {
+        color:rgb(167, 24, 124);
+    }
+
+    body {
+        background-color: oldlace;
+    }
+
+    #nav {
+
+        background-color: rgb(12, 151, 65);
+    }
+
+    .btn:hover {
+        /* color: red; */
+        background-color: red;
+    }
+
+    .btn {
+        color: rgb(63, 15, 139);
+        border-color: red;
+        background-color: white;
+        border-radius: 13px;
+    }
+
+    summary,
+    span {
+        outline: none;
+    }
+
+    img {
+        border-radius: 13px;
+        border-color: red;
+        border-style: solid;
+        padding: 12px;
+        border-width: 6px;
+    }
+</style>
+
 <body>
-    
+
     <!-- Navbar is here -->
     <nav class="navbar navbar-expand-lg" id="nav">
         <a class="navbar-brand" href="#">Vicky Web</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-            <span class="navbar-toggler-icon" >☰</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            style="outline: none;">
+            <span class="navbar-toggler-icon">☰</span>
         </button>
-        
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -86,71 +126,87 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-           
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
 
 
 
-<h2>I am just doing practice of HTML</h2>
+    <h2>I am just doing practice of HTML</h2>
     <!-- image is here -->
     <div class="container">
-    <img src="https://source.unsplash.com/900x400/?nature,water" alt="An unknown error has been occured" style="width: 100%;">
-</div>
-    <p> <summary><details> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cum maxime! Esse autem id amet minus facere laboriosam? Omnis ullam <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit.</strong> iste possimus <em>Lorem ipsum dolor sit amet.</em> recusandae amet optio delectus quos nulla eveniet voluptatum alias veniam repellendus sit corporis tenetur blanditiis molestias, eius praesentium facilis tempora laborum labore? Iusto.</details></summary></p>
+        <img src="https://source.unsplash.com/900x400/?nature,water" alt="An unknown error has been occured"
+            style="width: 100%;">
+    </div>
+    <p>
+        <details>
+            <summary>Details</summary> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, cum maxime!
+            Esse autem id amet minus facere laboriosam? Omnis ullam <strong>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Velit.</strong> iste possimus <em>Lorem ipsum dolor sit amet.</em> recusandae amet
+            optio delectus quos nulla eveniet voluptatum alias veniam repellendus sit corporis tenetur blanditiis
+            molestias, eius praesentium facilis tempora laborum labore? Iusto.
+        </details>
+    </p>
+
+    <details>
+        <summary>Copyright 1999-2018.</summary>
+        <p> - by Refsnes Data. All Rights Reserved.</p>
+        <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+    </details>
     <!-- go to links -->
     <a href="https://github.com/IamVicky90">Go to My github account to do some coding</a><br>
     <a href="https://twitter.com/">Twitter </a>
 
     <h2>Please fill the form</h2>
-    <form action="https://github.com/IamVicky90" id="form" >
-    <label for="name"> Name: <input type="text" id="name"></label><br><br>
-    <label for="email"> Email: <input type="email" id="email"></label><br><br>
-    <label for="date"> Date: <input type="date" id="date"></label><br><br>
-Select your Gender: <br><input type="radio" id="male" name="gender" value="male" checked>
-<label for="male">Male</label><br>
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label><br>
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label><br><br>
-<label for="qualification">Please Select your Qualification</label>
-<select name="myQualification" id="qualification">
-    <option value="Matric">Matric</option>
-    <option value="Intermediate" selected>Intermediate</option>
-    <option value="Graduation">Graduation</option>
-</select><br><br>
-Do you want to reset this form?<input type="reset" class="btn"><br><br>
-Click here to submit your form<input type="submit" class="btn">
+    <form action="https://github.com/IamVicky90" id="form">
+        <label for="name"> Name: <input type="text" id="name"></label><br><br>
+        <label for="email"> Email: <input type="email" id="email"></label><br><br>
+        <label for="date"> Date: <input type="date" id="date"></label><br><br>
+        Select your Gender: <br><input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+        <label for="qualification">Please Select your Qualification</label>
+        <select name="myQualification" id="qualification">
+            <option value="Matric">Matric</option>
+            <option value="Intermediate" selected>Intermediate</option>
+            <option value="Graduation">Graduation</option>
+        </select><br><br>
+        Do you want to reset this form?<input type="reset" class="btn"><br><br>
+        Click here to submit your form<input type="submit" class="btn">
 
-</form >
+    </form>
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert" style="color: green;">
-    <strong>If the form is not visible properly then please refresh the page</strong>
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" style="color: green;">
+        <strong>If the form is not visible properly then please refresh the page</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
 
-     <!-- table are here -->
-     <br><br><br>
-     <table>
+    <!-- table are here -->
+    <br><br><br>
+    <table>
         <thead>
             <tr>
                 <th>Name</th>
@@ -169,18 +225,25 @@ Click here to submit your form<input type="submit" class="btn">
 
 
 
-    
-<ul type="dish">
-    <li>This website is hosted by Vicky World production</li>
-    <li>If you find any querry then contact the web host</li>
-</ul>
-<ol type="1">
-    <li>This website is hosted by Waqas</li>
-    <li>If you find any querry then contact the web host</li>
-</ol>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <ul type="dish">
+        <li>This website is hosted by Vicky World production</li>
+        <li>If you find any querry then contact the web host</li>
+    </ul>
+    <ol type="1">
+        <li>This website is hosted by Waqas</li>
+        <li>If you find any querry then contact the web host</li>
+    </ol>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
