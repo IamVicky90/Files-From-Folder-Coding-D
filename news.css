@@ -1,0 +1,84 @@
+
+    body {
+        background-image: url("icons/back.jpg");
+          background-repeat: no-repeat;
+          
+        background-color: oldlace;
+        /* display: flex; */
+    }
+
+    .left {
+        display: inline;
+        /* display: flex; */
+    }
+
+    .left img {
+
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        /* display: inline; */
+        box-sizing: border-box;
+        width: 5%;
+
+    }
+
+    .centre {
+        display: inline;
+        /* padding-left: 459px; */
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        margin-left: 237px;
+        /* margin: auto; */
+        padding: 6px;
+        padding-left: 20px ;
+        /* justify-content: center; */
+
+
+    }
+    
+
+    .centre a {
+        color: green;
+        padding: 30px;
+        
+
+    }
+    .right{
+        display: inline;
+        margin-left: 50px;
+        
+    }
+    .right form input{
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        display: inline;
+      
+    }
+    .right form button{
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        display: inline;
+    }
+    .alert{
+        border-radius: 8px;
+        border-style: solid;
+        border-color: red;
+        margin-left:200px;
+        margin-right:200px;
+        align-self: flex-centre;
+
+    }
+    .btn{
+        color:rgb(202, 124, 124);
+        background-color: white;
+        border-radius: 12px;
+        border-color: white;
+    }
+    .btn:hover{
+        background-color: green;
+        border-color: green;
+    }

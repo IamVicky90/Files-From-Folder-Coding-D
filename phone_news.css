@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    
+}
+.centre {
+    display: flex;
+    /* padding-left: 459px; */
+    border-radius: 8px;
+    border-style: solid;
+    border-color: red;
+    /* margin-left: 237px; */
+    /* margin: auto; */
+    /* padding: 6px; */
+    /* padding-left: 20px; */
+    /* justify-content: center; */
+}
+
+.centre {
+    display: inline;
+    /* padding-left: 459px; */
+    border-radius: 8px;
+    border-style: solid;
+    border-color: red;
+    /* margin-left: 237px; */
+    /* margin: auto; */
+    /* padding: 6px; */
+    /* padding-left: 20px; */
+    /* justify-content: center; */
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+}
